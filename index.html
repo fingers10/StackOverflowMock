@@ -8,12 +8,13 @@
 </head>
 
 <body>
+    <span id="loader"></span>
     <header id="header">
         <div>
             <section id="brand">
                 <i class="fab fa-stack-overflow fa-2x"></i> <img src="/images/logo.png">
             </section>
-            <section id="products">products</section>
+            <section id="products">Products</section>
             <section id="search">
                 <i class="fa fa-search"></i>
                 <input type="search" placeholder="Search...">
@@ -24,19 +25,23 @@
     </header>
     <main id="main">
         <nav id="navigation">
-            <ul class="leftnavigation">
-                <li>Home</li> 
-                <li>PUBLIC</li> 
-                <li><i class="fas fa-globe-americas"></i>&nbsp;&nbsp;&nbsp;Questions</li>
-                <div class="innerlist">
-                    <li>Tags</li>
-                    <li>Users</li>
-                </div> 
-                <li>FIND A JOB</li>
-                <div class="innerlist">
-                    <li>Jobs</li>
-                    <li>Companies</li>
-                </div>
+            <ul class="menu">
+                <li class="nav-link active">Home</li> 
+                <li class="nav-link disabled">PUBLIC</li> 
+                <li>
+                    <ul class="sub-menu">
+                        <li class="nav-link nav-link-with-icon"><i class="fas fa-globe-americas"></i> Questions</li>
+                        <li class="nav-link">Tags</li>
+                        <li class="nav-link">Users</li>
+                    </ul>
+                </li> 
+                <li class="nav-link disabled">FIND A JOB</li>
+                <li>
+                    <ul class="sub-menu">
+                        <li class="nav-link">Jobs</li>
+                        <li class="nav-link">Companies</li>
+                    </ul>
+                </li>
             </ul>
         </nav>
         <article id="content">
