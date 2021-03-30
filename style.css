@@ -11,6 +11,9 @@
     --header-input-boxshadow-white: #378ad326;
     --header-button-backgroundcolor-black: #4A4E51;
     --header-button-color-white: #e7e8eb;
+    
+    --navigation-active-backgroundcolor-gray: #3D3D3D;
+    --navigation-active-borderright-orange: #d64a17;
   }
 
 html, body 
@@ -111,6 +114,34 @@ body {
     position: fixed;
     width: calc(100% - 87.75%);
 }
+
+.leftnavigation{
+    list-style: none;
+    padding: 0;
+}
+
+.leftnavigation li{
+    padding: 8px 0px;
+    font-size: 13px;
+    
+}
+
+.leftnavigation li:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.leftnavigation li:active{
+    padding: 10px;
+    background-color: var(--navigation-active-backgroundcolor-gray);
+    border-right: var(--navigation-active-borderright-orange) solid 2px;
+    cursor: pointer;
+}
+
+.innerlist li{
+    padding: 4px 0px 4px 30px;
+}
+
 
 #content {
     grid-column-start: 2;
