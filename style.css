@@ -172,6 +172,11 @@ body {
     color: #C4C8CC;;
 }
 
+.nav-link:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .nav-link-with-icon {
     padding: 8px 6px 8px 8px !important;
 }
