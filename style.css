@@ -1,6 +1,8 @@
 :root {
+    --primary-orange: #f48024;
+
     --header-background-gray: #393939;
-    --loader-border-top-orange: #f48024;
+    --loader-border-top-orange: var(--primary-orange);
     
     --body-color-white: #E7E8EB;
     --body-background-color-black: #2D2D2D;
@@ -13,7 +15,7 @@
     --header-button-color-white: #e7e8eb;
     
     --navigation-active-backgroundcolor-gray: #3D3D3D;
-    --navigation-active-borderright-orange: #d64a17;
+    --navigation-active-borderright-orange: var(--primary-orange);
     --navigation-disabled-link-color: #ACB2BB;
 
     --content-borderleft-gray: #4a4e51;
