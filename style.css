@@ -19,6 +19,11 @@
     --navigation-disabled-link-color: #ACB2BB;
 
     --content-borderleft-gray: #4a4e51;
+
+    --footer-background-gray: #242729;
+    --footer-color-white: #6A737C;
+    --footer-sectionheader-color-white: #BBC0C4;
+    --footer-sectionul-color-white: #9FA6AD;
   }
 
 html, body 
@@ -31,8 +36,9 @@ body {
     margin: 0;
     display: grid;
     grid: "header" 
-          "main";
-    grid-template-rows: 3.125rem auto;
+          "main"
+          "footer";
+    grid-template-rows: 3.125rem auto auto;
 
     background-color: var(--body-background-color-black);
     color: var(--body-color-white);
@@ -186,6 +192,40 @@ body {
     grid-column-end: 3;
     border-left: 1px solid var(--content-borderleft-gray);
     padding: 2rem;
+}
+
+#footer {
+    grid-area: footer;
+    display: grid;
+    
+    background-color: var(--footer-background-gray);
+    color: var(--footer-color-white);
+}
+
+#footer div {
+    max-width: 1264px;
+    width: 100%;  
+    margin: 0 auto; 
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer div section header {
+    color: var(--footer-sectionheader-color-white);
+    font-size: 13px;
+}
+
+#footer div section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#footer div section ul li{
+    font-size: 13px;
+    color: var(--footer-sectionul-color-white);
+    padding: 5px 0;
 }
 
 @media screen and (max-width: 1140px) {
