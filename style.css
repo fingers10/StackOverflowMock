@@ -42,7 +42,7 @@ body {
 
     background-color: var(--body-background-color-black);
     color: var(--body-color-white);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 #loader {
@@ -211,6 +211,7 @@ body {
 
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #footer div section header {
@@ -229,9 +230,10 @@ body {
     padding: 5px 0;
 }
 
-@media screen and (max-width: 1140px) {
-    #header div {
-        grid-template-columns: 25% 10% 40% 25%;
+@media screen and (max-width: 1344px) { 
+    #footer div {
+        width: auto;
+        margin: 0;  
     }
 }
 
@@ -245,6 +247,17 @@ body {
     {
         grid: "navigation content advertisement";
         grid-template-columns: 164px calc(100% - 164px - 300px) 300px;
+    }
+
+    #footer div {
+        width: auto;
+        margin: 0;  
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    #header div {
+        grid-template-columns: 25% 10% 40% 25%;
     }
 }
 
@@ -340,5 +353,10 @@ body {
     #content, #advertisement {
         grid-column-start: 1;
         grid-column-end: -1;
+    }
+
+    #footer div {
+        width: auto;
+        margin: 0;  
     }
 }
