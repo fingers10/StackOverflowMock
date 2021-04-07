@@ -24,6 +24,7 @@
     --footer-color-white: #6A737C;
     --footer-sectionheader-color-white: #BBC0C4;
     --footer-sectionul-color-white: #9FA6AD;
+    --footer-socialmedia-color: #848D95;
   }
 
 html, body 
@@ -217,6 +218,7 @@ body {
 #footer div section header {
     color: var(--footer-sectionheader-color-white);
     font-size: 13px;
+    font-weight: bold;
 }
 
 #footer div section ul {
@@ -228,6 +230,17 @@ body {
     font-size: 13px;
     color: var(--footer-sectionul-color-white);
     padding: 5px 0;
+}
+
+#footer #socialmedia ul {
+    display: flex;
+    margin-top: 0;
+}
+
+#footer #socialmedia ul li {
+    font-size: 11px;
+    color: var(--footer-socialmedia-color);
+    margin-left: 12px;
 }
 
 @media screen and (max-width: 1344px) { 
@@ -355,8 +368,21 @@ body {
         grid-column-end: -1;
     }
 
+    #footer {
+        padding: 24px 12px;
+    }
+
     #footer div {
         width: auto;
         margin: 0;  
+        padding: 0;
+    }
+
+    #footer div section header, #footer div section ul li {
+        font-size: 11px;
+    }
+
+    #footer div > section:first-child {
+        display: none;
     }
 }
