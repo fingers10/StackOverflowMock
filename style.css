@@ -7,6 +7,9 @@
     --body-color-white: #E7E8EB;
     --body-background-color-black: #2D2D2D;
 
+    --header-product-background-color-black: #404345;
+    --header-product-font-color-white: #f2f2f3;
+    --header-product-font-color-gray: #c4c8cc;
     --header-input-color-white: #cfd2d6;
     --header-input-bordercolor-gray: #697075;
     --header-input-bordercolor-blue: #2b5f8a;
@@ -88,6 +91,18 @@ body {
 
 #brand i {
     display: none;
+}
+
+#products span {
+    font-size: 13px;
+    color: var(--header-product-font-color-gray);
+    padding: 6px 16px;
+}
+
+#products span:hover {
+    background-color: var(--header-product-background-color-black);
+    color: var(--header-product-font-color-white);
+    border-radius: 1000px;
 }
 
 #search {
